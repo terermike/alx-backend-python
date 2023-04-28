@@ -5,4 +5,4 @@ string str2 as arguments and returns a concatenated string"""
 
 def concat(str1: string, str2: string) -> string:
     """Concatenates 2 strings"""
-    return str1 + str2
+    return f"str1 + str2"
