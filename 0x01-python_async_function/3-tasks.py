@@ -1,19 +1,13 @@
 #!/usr/bin/env python3
-"""
-Regular function that returns an asyncio.Task
+"""Task 3's module.
 """
 import asyncio
 
 
-def task_wait_random(max_delay: int) -> asyncio.Task:
-    """
-    Returns an asyncio.Task that waits for a random delay between 0 and
-    max_delay (included and float value) seconds and eventually returns it.
-    """
-    async def wait_random(max_delay: int) -> float:
-        """Waits for a random delay between 0 and max_delay seconds."""
-        delay = random.uniform(0, max_delay)
-        await asyncio.sleep(delay)
-        return delay
+wait_random = __import__('0-basic_async_syntax').wait_random
 
+
+def task_wait_random(max_delay: int) -> asyncio.Task:
+    """Creates an asynchronous task for wait_random.
+    """
     return asyncio.create_task(wait_random(max_delay))
