@@ -4,4 +4,4 @@ Repo with directories of projects on devops carried out during Software Engineer
 All of the following directories are projects done during the studies:
 
 Project name	Description
-0x00-python_variable_annotations	Understanding Python notations, how to use type notations to specify function signatures and variable types, Duck typing nad validating code with mypy.
+python_variable_annotations	Understanding Python notations, how to use type notations to specify function signatures and variable types, Duck typing nad validating code with mypy.
